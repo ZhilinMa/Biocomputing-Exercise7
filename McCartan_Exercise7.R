@@ -13,7 +13,7 @@ elem1 = c(100, 200, 300, 400, 500, 600, 700, 800, 900, 1000)
 teamname = c("Notre Dame", "UNLV")
 score = c(44, 21)
 elem2 = data.frame(teamname, score)
-# save value 999 as variable
+# store value 999 as variable
 elem3 = 999
 # create 10 x 5 matrix with integers 1-50
 elem4 = matrix(data=1:50, nrow=10, ncol=5)
