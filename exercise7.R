@@ -3,10 +3,10 @@
 # setting working directory
 setwd('~/Biocomputing/Biocomputing-Exercise7/')
 
-#creating iris.txt
+# creating iris.txt
 table <- read.table(file="iris.csv",sep=",",header = TRUE)
 
-write.table(x=table,file="iris.txt",sep="\t")
+write.table(x=table,file="iris.txt",sep="\t",row.names=FALSE)
 
 # vector 1
 vec1 = c(100,200,300,400,500,600,700,800,900,1000)
