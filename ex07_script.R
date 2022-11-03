@@ -13,8 +13,8 @@ write.table(x=iris, file="iris.txt", append=FALSE, sep="\t")
 vec_nums = seq(100, 1000, by = 100)
 
   # data frame with the team names and final score from last week's game
-vec_game = c('Notre Dame', 'Syracuse', '41', '24')
-mat_game = matrix(vec2, nrow=2, ncol=2)
+df_game = data.frame(names=c('Notre Dame', 'Syracuse'),
+                      scores=c('41', '24'))
 
   # the number 999
 num = 999
@@ -25,5 +25,5 @@ mat_ints = matrix(1:50, nrow=10, ncol=5)
   # vector containing three letters
 vec_lets = c('k', 'j', 'f')
 
-final_list = list(vec_nums, mat_game, num, mat_ints, vec_lets)
+final_list = list(vec_nums, df_game, num, mat_ints, vec_lets)
 
