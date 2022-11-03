@@ -1,6 +1,6 @@
 #set working directory to Biocomputing-Exercise7"
 iris.csv <- read.csv("iris.csv")
-write.table(iris, file='C:/Users/15135/Desktop/Biocomputing-Exercise7/iris.txt')
+write.table(iris.csv, file='C:/Users/15135/Desktop/Biocomputing-Exercise7/iris.txt', sep = '\t')
 iris.txt <- read.table("iris.txt", sep="\t")
 
 #Question 2
