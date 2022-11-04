@@ -1,7 +1,10 @@
 #Question 1: Write R code that will convert the comma-delimited iris.csv file to a tab delimited version named iris.txt
 
+#first, set working directory
 setwd("~/Desktop/biocomputing-2022/Biocomputing-Exercise7/")
+#read data in iris.csv and store as variable "newfile"
 newfile<-read.csv("iris.csv")
+#write the data in newfile to iris.txt in a data frame
 write.table(newfile, file="iris.txt", append=FALSE)
 
 
