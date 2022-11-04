@@ -1,7 +1,8 @@
-#set working directory to Biocomputing-Exercise7"
+#set working directory to Biocomputing-Exercise7
 iris.csv <- read.csv("iris.csv")
 write.table(iris.csv, file='C:/Users/15135/Desktop/Biocomputing-Exercise7/iris.txt', sep = '\t')
 iris.txt <- read.table("iris.txt", sep="\t")
+#made sure to use \t both times to emphasize change to a tab delimiter
 
 #Question 2
 vect1 <-seq(100,1000, by=100)
