@@ -1,0 +1,29 @@
+#Part 1: iris.csv -> iris.txt conversion
+#creates a data frame from the csv
+df <- read.csv("iris.csv")
+
+#writes the data frame to a table with a tab as separator
+write.table(df, file = "iris.txt", sep = "\t")
+
+
+#PART 2
+#I am creating all of the list elements before making the list
+
+#1) a vector with length 10 containing 100, 200, . . . , 1000
+a <- seq(from = 100, to = 1000, by = 100)
+
+#2) a two-row, two-column data frame with the team names and
+#final score from last week’s Notre Dame football game
+b <- data.frame(UNLV = 21, ND = 44)
+
+#3) the number 999
+c <- 999
+
+#4) a 10-row 5-column matrix containing integers from 1 to 50
+d <- matrix(1L:50L, nrow = 10, ncol = 5)
+
+#5) a vector containing three letters 
+e <- c("g", "i", "t")
+
+#and the list containing all of these elements
+final <- list(a, b, c, d, e)
